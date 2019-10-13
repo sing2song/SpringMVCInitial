@@ -17,6 +17,9 @@ NickName: <input type="text" id="nickName"/><br/>
 UserPassword: <input type="password" id="userPwd"/><br/>
 Check Password: <input type="password" id="checkPwd"/><br/>
 userPhone: <input type="text" id="userPhone" placeholder="xxx-xxxx-xxxx"/><br/>
-<input type="button" value="Submit"/>
+<input type="button" value="Submit" id="submit"/>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/resources/js/signup.js"></script>
 </body>
 </html>

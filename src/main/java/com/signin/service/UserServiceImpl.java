@@ -22,4 +22,9 @@ public class UserServiceImpl implements UserService {
             return true;
         return false;
     }
+
+    @Override
+    public void createUserData(UserData userData) {
+        repository.insertUserData(userData);
+    }
 }

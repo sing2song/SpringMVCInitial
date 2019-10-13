@@ -27,4 +27,16 @@ public class SignInRestController {
         json.put("result", userService.isLogin(user));
         return json.toJSONString();
     }
+
+    @RequestMapping(value="/signup", method=RequestMethod.POST)
+    public void signUp(@RequestParam String userId, @RequestParam String userName, @RequestParam String nickName, @RequestParam String userPwd, @RequestParam String userPhone) {
+        UserData user = new UserData();
+        user.setUserId(userId);
+        user.setNickName(nickName);
+        user.setUserName(userName);
+        user.setUserPwd(userPwd);
+        user.setUserPhone(userPhone);
+
+        userService.createUserData(user);
+    }
 }

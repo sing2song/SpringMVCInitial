@@ -21,4 +21,9 @@ public class MainController {
     public String singup() {
         return "signup";
     }
+
+    @RequestMapping("/main")
+    public String main() {
+        return "main";
+    }
 }

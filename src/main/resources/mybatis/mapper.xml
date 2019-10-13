@@ -17,10 +17,8 @@
         INSERT INTO userdata(userId, userPwd)
         VALUES(#{userId}, #{UserPwd});
     </insert>
-
-    <update id="updateUser" parameterType="com.signin.data.UserData">
-        UPDATE userdata
-        SET userPwd = #{userPwd}
-        where userId = #{userId};
-    </update>
+    <insert id="insertUserData">
+        INSERT INTO userdata(userId, userName, nickName, userPwd, userPhone)
+        VALUES(#{userId}, #{userName}, #{nickName}, #{userPwd}, #{userPhone});
+    </insert>
 </mapper>
