@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.signin.service.UserService;
 
 @Controller
-public class HomeController {
+public class MainController {
 
     @Autowired
     private UserService userService;
@@ -15,5 +15,10 @@ public class HomeController {
     @RequestMapping("/")
     public String index() {
         return "index";
+    }
+
+    @RequestMapping("/signup")
+    public String singup() {
+        return "signup";
     }
 }

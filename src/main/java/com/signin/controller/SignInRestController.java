@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-public class HomeRestController {
+public class SignInRestController {
 
     @Autowired
     private UserService userService;
